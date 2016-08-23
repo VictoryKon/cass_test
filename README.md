@@ -6,7 +6,7 @@ Cassandra server was started on Docker, the database was accessible through cqls
 To start cassandra server on docker:
 docker login
 docker pull cassandra
-sudo docker run -p 9042:9042 -p 8888:8888 -p 7000:7000 -p 7001:7001 -p 7199:7199 -p 9160:9160 -p 61620:61620 -p 61621:61621 -it cassandra
+sudo docker run -p 9042:9042 -p 8888:8888 -p 7000:7000 -p 7001:7001 -p 7199:7199 -p 8983:8983 -p 9160:9160 -p 61620:61620 -p 61621:61621 -it cassandra
 
 
 Currently there exist a bug in django_cassandra_engine, the fix for it is described here:
